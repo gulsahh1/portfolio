@@ -23,7 +23,7 @@ Proje, işletmenin mevcut iş akışları ve ihtiyaçları doğrultusunda şekil
 - **Backend:** C# / .NET Web API
 - **Veritabanı:** Microsoft SQL Server
 - **Masaüstü uygulaması:** Tauri
-- **Frontend:**React/TypeScript tabanlı arayüz
+- **Frontend:** React/TypeScript tabanlı arayüz
 - **Dağıtım ve güncelleme:** Windows kurulum paketleri ve uygulama güncelleme mekanizması
 
 ### Teknik Çalışma Alanları
