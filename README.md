@@ -1,53 +1,125 @@
-
 # Gülşah | Yazılım Mühendisliği Portföyü
 
-Bilgisayar mühendisiyim. Gerçek iş ihtiyaçlarına yönelik yazılım çözümleri geliştiriyor; backend geliştirme, veritabanı yönetimi ve uygulama mimarisi alanlarında kendimi geliştiriyorum.
+Bilgisayar mühendisiyim. Gerçek iş süreçlerini dijitalleştiren, sürdürülebilir ve bakımı kolay yazılım çözümleri geliştiriyorum.
 
-## Öne Çıkan Proje
+Odak alanlarım:
 
-### Özkan Fındık ERP
+- C# / .NET backend geliştirme
+- ASP.NET Core Web API
+- Entity Framework Core ve SQL Server
+- React / TypeScript arayüz geliştirme
+- Uygulama mimarisi, sürüm yönetimi ve yazılım bakımı
+
+---
+
+## Öne Çıkan Proje: Özkan Fındık ERP
+
 **Özkan Fındık İşletmesine Özel Ticari Yönetim Yazılımı**
 
-Özkan Fındık'ın fındık alım satım süreçlerini dijitalleştirmek ve işletmenin operasyonel ihtiyaçlarını karşılamak amacıyla geliştirdiğim özel ERP uygulaması.
+Özkan Fındık’ın fındık alım-satım süreçlerini dijitalleştirmek amacıyla geliştirdiğim, işletmenin gerçek operasyonel ihtiyaçlarına göre tasarlanmış özel bir ERP uygulaması.
 
-Proje, işletmenin mevcut iş akışları ve ihtiyaçları doğrultusunda şekillendirilmiştir. Ticari süreçlerin daha düzenli, izlenebilir ve verimli yönetilmesini hedeflemektedir.
+Proje; ticari kayıtların düzenli tutulmasını, iş süreçlerinin izlenebilir olmasını ve günlük operasyonların daha hızlı yönetilmesini hedefler.
 
-### Projenin Gelişim Yol Haritası
+> Kaynak kodlar, müşteri verileri ve ticari bilgiler güvenlik nedeniyle kamuya açık değildir. Portföydeki ekran görüntülerinde yalnızca örnek veriler kullanılmıştır.
 
-- **Masaüstü uygulaması:** İşletmenin ticari süreçlerini yönetmek üzere geliştirilen ERP uygulaması.
-- **Mobil uygulama:** Mevcut iş süreçlerini mobil cihazlardan yönetmeyi destekleyecek uygulamanın geliştirilmesi planlanmaktadır.
-- **Gelecek geliştirmeler:** İşletmenin ihtiyaçları doğrultusunda yeni özelliklerin ve dijital çözümlerin sisteme eklenmesi.
+---
 
-### Kullanılan Teknolojiler
+## Çözdüğüm Problem
 
-- **Backend:** C# / .NET Web API
-- **Veritabanı:** Microsoft SQL Server
-- **Masaüstü uygulaması:** Tauri
-- **Frontend:** React/TypeScript tabanlı arayüz
-- **Dağıtım ve güncelleme:** Windows kurulum paketleri ve uygulama güncelleme mekanizması
+İşletmenin alım-satım ve operasyon süreçleri için merkezi, izlenebilir ve sürdürülebilir bir dijital yönetim sistemi yoktu.
 
-### Teknik Çalışma Alanları
+Bu proje ile:
 
-- İş süreçlerinin analizi ve dijitalleştirilmesi
-- Backend ve veritabanı entegrasyonu
-- Masaüstü uygulama geliştirme
-- Uygulama paketleme ve sürüm yönetimi
-- Yazılım bakımı ve güncelleme süreçleri
+- Ticari süreçler tek bir uygulamada yönetilebilir hâle getirildi.
+- Veriler ilişkisel bir veritabanı üzerinde yapılandırıldı.
+- Kullanıcı arayüzü, günlük iş akışına uygun şekilde tasarlandı.
+- Uygulama, Windows ortamında kurulabilir ve güncellenebilir hâle getirildi.
 
-### Proje Güvenliği
+---
 
-Uygulamanın kaynak kodları, işletmeye ait ticari bilgilerin ve özel yazılımın korunması amacıyla erişimi kısıtlı GitHub depolarında tutulmaktadır.
+## Teknik Yaklaşım
 
-Bu portföyde projenin amacı, teknik yaklaşımı ve uygun görülen görselleri paylaşılmaktadır. Kaynak kodları, müşteri kayıtları, ticari veriler ve gizli yapılandırmalar kamuya açık olarak yayımlanmamaktadır.
+Uygulama, **ASP.NET Core 8 Web API** tabanlı bir backend ve **React + TypeScript** ile geliştirilmiş bir ön yüz kullanır. Masaüstü deneyimi için **Tauri** tercih edildi.
+
+Mimari yaklaşım:
+
+- İş mantığı backend tarafında merkezi olarak yönetilir.
+- Frontend, REST API üzerinden backend ile iletişim kurar.
+- Veri erişimi Entity Framework Core ile yönetilir.
+- Kimlik doğrulama JWT tabanlı olarak tasarlanır.
+- MediatR ile uygulama içi istek/komut akışları daha düzenli ve test edilebilir hâle getirilir.
+- Tauri, React arayüzünü masaüstü uygulaması olarak paketler.
+
+---
+
+## Kullanılan Teknolojiler
+
+| Alan | Teknoloji |
+|---|---|
+| Backend | C#, .NET 8, ASP.NET Core Web API |
+| Veri Erişimi | Entity Framework Core |
+| Veritabanı | Microsoft SQL Server |
+| Frontend | React, TypeScript, Tailwind CSS |
+| Mimarî Yapı | MediatR |
+| Kimlik Doğrulama | JWT |
+| Masaüstü Dağıtımı | Tauri |
+| Sürüm Yönetimi | Windows kurulum paketleri ve güncelleme mekanizması |
+
+---
+
+## Geliştirme Kapsamı
+
+- İş süreçlerinin analizi ve yazılım gereksinimlerinin çıkarılması
+- Backend servislerinin ve API uçlarının geliştirilmesi
+- SQL Server veritabanı tasarımı ve Entity Framework Core entegrasyonu
+- React / TypeScript tabanlı kullanıcı arayüzü geliştirme
+- JWT ile kimlik doğrulama ve yetkilendirme yapısının kurulması
+- Tauri ile masaüstü uygulaması paketleme
+- Windows kurulum paketi hazırlama ve uygulama güncelleme sürecinin yönetimi
+- Hata takibi, bakım ve sürüm güncellemeleri
+
+---
+
+## Proje Yol Haritası
+
+### Tamamlananlar
+
+- Masaüstü ERP uygulaması
+- Backend API ve veritabanı altyapısı
+- React tabanlı yönetim arayüzü
+- Windows kurulum ve güncelleme altyapısı
+
+### Planlanan Geliştirmeler
+
+- Mobil uygulama ile saha ve mobil kullanım senaryolarının desteklenmesi
+- İşletme ihtiyaçlarına göre yeni modüllerin eklenmesi
+- Raporlama ve operasyonel analiz özelliklerinin genişletilmesi
+
+---
+
+## Ekran Görüntüleri
+
+- Görseller dosyada paylaşılmıştır.
+
+## Güvenlik ve Gizlilik
+
+Proje, ticari bir işletme için geliştirildiği için kaynak kodları özel GitHub depolarında tutulmaktadır.
+
+Portföy kapsamında yalnızca:
+
+- Projenin amacı
+- Kullanılan teknolojiler
+- Teknik yaklaşım
+- Örnek verilerle hazırlanmış ekran görüntüleri
+
+paylaşılmaktadır.
+
+Kaynak kodlar, veritabanı yapılandırmaları, müşteri kayıtları, ticari veriler ve gizli bilgiler kamuya açık değildir.
 
 ---
 
 ## Hakkımda
 
-Bilgisayar mühendisiyim. Yazılım mühendisliği, backend geliştirme, yazılım mimarisi ve yapay zekâ alanlarında uzmanlaşmayı hedefliyorum.
+Bilgisayar mühendisiyim. Backend geliştirme, yazılım mimarisi, veritabanı yönetimi ve yapay zekâ alanlarında uzmanlaşmayı hedefliyorum.
 
 Gerçek işletme ihtiyaçlarını analiz ederek uygulanabilir yazılım çözümleri geliştirmeye ve bu çözümleri sürdürülebilir ürünlere dönüştürmeye odaklanıyorum.
-
----
-
-*Proje tanıtımında işletmenin gizli bilgileri ve özel yazılım ayrıntıları güvenlik amacıyla paylaşılmamaktadır.*
